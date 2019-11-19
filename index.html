@@ -13,6 +13,7 @@
         <br><br>
         <q>Contrary to what the name implies, D3 <i>layouts</i> do not, in fact, lay anything out for you on the screen. The layout methods have no direct <i>visual</i> output. Rather, the D3 layouts take the data that you provide and remap or otherwise transform it, thereby generating <i>new</i> data that is more convenient for a specific visual task. It's still up to you to take that new data and generate visuals from it.</q>
         <br><br>
+        
         <div>
         The list of D3 layouts includes:<ul>
             
@@ -32,10 +33,17 @@
             
             </ul>
              </div>
-        
-        
-        <h3></h3>
         </h3>
+        
+        <h2>A common algorithmic way to use layouts:</h2>
+        
+        <h3>It seems there are three general steps to follow in using D3 layouts:
+        <ol>
+            <li><h4>Convert the data so that it can be used by the corresponding layout. This is different for each one, but this usually involves the use of a line of code that uses the layouts name, such as <span class="code">d3.pie()</span> or <span class="code">d3.stack</span>, etc.</h4></li>
+            <li><h4>Create the visual elements characteristic of the layout. For pie charts, this means arcs, for stack layouts, rectangles, etc.</h4></li>
+            <li><h4>Add the finishing touches, depending on the layout. This can come in the form of ordering the data or updating it over time, to name a few examples.</h4></li>
+        </ol></h3>
+        
     </body>
 
 </html>
